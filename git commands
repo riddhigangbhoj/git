@@ -1,0 +1,111 @@
+sudo su
+yum update && yum upgrade
+cat/etc/os-release
+
+
+MUMBAI
+ls
+cd desktop
+ls
+-
+-
+sudo yum update
+sudo su
+yum install git -y
+which git
+git -version
+git config --global user.name "ray"
+git config --global user.email ray@gmail.com
+git config --list
+which git
+mkdir mumbaigit
+ls
+cd mumbaigit
+git init
+cat >mumbai
+	this is the first sentence
+git status
+git add .
+git status
+git commit -m "Commit 1 from mumbai"
+git status
+git log
+git show 6378
+git remote add origin <url>
+git push origin master
+cat >mumbai
+	second line
+git status
+git add .
+git status
+git commit -m "second commit from mumbai"
+git status
+git log
+git show 5278
+
+
+SINGAPORE
+sudo su
+yum install git -y
+which git
+git version
+git config --global user.name "ray2"
+git config --global user.email "ray2@gmail.com"
+git config --list
+mkdir singapore
+ls
+cd singapore
+git init
+ls -a (shows hidden file)
+git remote add origin <url>
+git log
+git pull origin master
+git log
+git show 3856
+cat >>mumbai
+	third line
+	fourth line
+cat mumbai
+git status
+git add .
+git status
+git log
+git show 6868
+git push origin master
+git log --oneline
+git branch
+git branch b1
+git checkout b1
+cat >b1file
+
+
+vi filename (text editor)
+touch filename (create)
+git clean -n (dry run)
+git clean -f (forcefully)
+
+MERGE BRANCH (pulling mechanism)
+git merge b1
+
+STASH (temp storage)
+git stash (to stash item)
+git stash list 
+git stash clear
+git stash apply stash @{0} (get back stash item)
+
+RESET
+git reset <filename>
+	git reset . (to bring back file from staging to workspace)
+git reset --hard (removes from staging and workspace)
+
+CLONING (same as push pull, difference: creates a folder with same name in local repo in cloning)
+git clone <url of github repo>
+
+REVERT (helps to undo an existing commit)
+git revert
+
+TAG
+git tag (view all tags)
+git show <tag name> (particular tag)
+git tag -d <tagname> (delete tag)
+git tag -a <tagname> -m <message> <commit ID> (to apply tag)
